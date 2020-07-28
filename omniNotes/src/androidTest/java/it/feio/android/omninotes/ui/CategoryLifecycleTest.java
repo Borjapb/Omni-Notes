@@ -44,7 +44,6 @@ import android.view.View;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-import androidx.test.filters.FlakyTest;
 import androidx.test.filters.LargeTest;
 import it.feio.android.omninotes.R;
 import java.util.Calendar;
@@ -101,8 +100,6 @@ public class CategoryLifecycleTest extends BaseEspressoTest {
   }
 
   @Test
-  @FlakyTest(detail = "NoMatchingViewException: No views in hierarchy found matching: (with id: it.feio.android.omninotes:id/md_buttonDefaultPositive and with string from resource id: <2131820573> and is displayed on the screen to the user)\n"
-      + "\tIf the target view is not part of the view hierarchy, you may need to use Espresso.onData to load it from one of the following AdapterViews:it.feio.android.omninotes.models.views.NonScrollableListView{e62329c VFED.VC.. ......ID 0,455-1120,623 #7f0900b1 app:id/drawer_nav_list}")
   public void checkCategoryCreation () throws InterruptedException {
 
     addNewCategory();
